@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WSK Pizza</title>
+
+    <link rel="stylesheet" href="pizza.css"> <!-- link CSS -->
+
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link fontawasome --> 
+
+    
+    
+
+</head>
+
+
+<body>
+    
+    <section class="header"> <!-- first secction -->
+ 
+        <nav> <!-- navigation -->
+
+            <h2>.W.S.K.</h2>
+
+            <i style="color: white;cursor: pointer" id="i1" class="fa fa-bars" onclick="showmenu()"></i> <!-- bar menu button -->
+
+            <div class="nav-links" id="nav-links">
+
+            <i style="color: white;cursor: pointer;" id="i2" class="fa fa-times" onclick="hidemenu()"></i> <!-- close button -->
+
+                <ul> <!-- unodered list of navigation links -->
+
+                    <li><a href="https://www.pizzahut.lk/">HOME</a></li>
+                    <li><a href="https://www.pizzahut.lk/start">SIGN IN / REGISTER</a></li>
+                    <li><a href="https://www.pizzahut.lk/about-us">ABOUT</a></li>                   
+                    <li><a href="https://www.pizzahut.lk/login">MY ACCOUNT</a></li>
+                    <li><a href="https://www.pizzahut.lk/hotline">CONTACT</a></li>
+
+                </ul>
+
+            </div>
+                
+        </nav>
+
+        
+        <div class="text-box">
+            <h1>Pizza Hut Sri Lanka</h1>
+            <p>The only original Italian woodfired oven pizzas in Sri Lanka</p>
+            <a href="https://en.wikipedia.org/wiki/Pizza" class="Lanka">Know More</a>
+            
+        </div>
+
+        
+        
+    </section>
+    <body style="background-color: #d6d4d4e1;">
+
+    <!-- prices -->
+     <section class="price" >
+
+        <form action="index.php" method="POST" enctype="multipart/form-data" id="form">
+
+            <label for="username">username</label>
+            <input type="text" id="username" placeholder="Ex:-Saman123" minlength="6">
+            <br>
+
+
+            <label for="firstname">first name</label>
+            <input type="text" id="firstname" placeholder="Ex:-Saman" minlength="6">
+            <br>
+
+
+            <label for="lastname">last name</label>
+            <input type="text" id="lastname" placeholder="Ex:-Perera" minlength="6">
+            <br>
+
+
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="Ex:-Abc123#@" minlength="6">
+            <br>
+
+
+            <label for="phone">phone #:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="+94 7[0-9]{2}-[0-9]{3}-[0-9]{4}" >
+            <br>
+
+
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="Ex:-samanperera@gmail.com" minlength="6">
+            <br>
+
+
+            <label for="bday">birthday</label>
+            <input type="date" id="bday" placeholder="25/04/1994" minlength="6">
+            <br>
+
+            <label for="quantity">quantity</label>
+            <input type="number" id="quantity" placeholder="1234567890"  min="0" max="99" value="1">
+            <br>
+
+            <label for="title">title   :</label>
+            
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+
+
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." value="Ms." name="title">
+
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." value="Mrs." name="title">
+
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." value="PhD." name="title">
+            <br>
+
+            <label for="payment">payment</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+            <br>
+
+            <label for="subscribe">subscribe</label>
+            <input type="checkbox" id="subscribe">
+            <br>
+
+            <label for="comment">comment</label>
+            <textarea id="comment" rows="3" cols="25"></textarea>
+            <br>
+
+            <label for="file">file</label>
+            <input type="file" id="file" accept="image/png, image/jpeg">
+            <br>
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            <input type="reset"><br>
+            <input type="submit">
+        </form>
+
+
+        <hr>
+        <h1>DELIGHT</h1>
+        <hr>
+
+        <div class="row-1">   <!-- row 1.1 delight --> 
+            <div id="price-col-0-1">
+                <h3>Spicy Fish Pizza</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/f0ea5de8-e41b-4699-81e8-c60c42f8aef0.jpg">
+                <p id="Pizza-1">Add</p> 
+                <br>
+                <i id="icon-hart1" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart2" style="cursor: pointer;" class="fa fa-heart"></i>
+                <br>
+                
+            </div>
+
+            <div id="price-col-0-2">
+                <h3>Veggie Masala Pizza</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/2688c78f-e854-49b8-a3c3-d84171f501c2.jpg">
+                <p id="Pizza-2">Add</p>
+                <br>
+                <i id="icon-hart3" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart4" style="cursor: pointer;" class="fa fa-heart"></i><br>
+
+            </div>
+
+            <div id="price-col-0-3">
+                <h3>Chilli Chicken Pizza</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/209e7feb-7c0b-4fc4-8019-ab2a9e3406a9.jpg">
+                <p id="Pizza-3">Add</p>
+                <br>
+                <i id="icon-hart5" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart6" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+
+        <div class="row-1"> <!-- row 1.2 delight -->
+
+            <div id="price-col-0-4">
+                <h3>Cheesy Tomato with Gre...</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/c0df92e8-c6c1-43bb-8630-ac2631abf5ee.jpg">
+                <p id="Pizza-4">Add</p>
+                <br>
+                <i id="icon-hart7" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart8" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-0-5">
+                <h3>Sausage Delight</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/1bf84662-1902-4b94-9078-2da46056904f.jpg">
+                <p id="Pizza-5">Add</p>
+                <br>
+                <i id="icon-hart9" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart10" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-0-6">
+                <h3>Chicken Bacon & Potato...</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/e21a91b2-e470-4aae-a5e0-e8a372be2e45.jpg">
+                <p id="Pizza-6">Add</p>
+                <br>
+                <i id="icon-hart11" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart12" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+        <hr>
+
+        <h1>Classic</h1>
+        <hr>
+
+        <div class="row-1">   <!-- row 2.1 classic -->
+            <div id="price-col-1-1">
+                <h3>Chicken Triple Treat Pizza</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/c46dc1c2-8ac2-4d9a-b17f-2b75725d8b84.jpg">
+                <p id="Pizza-7">Add</p>
+                <br>
+                <i id="icon-hart13" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart14" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-1-2">
+                <h3>Chicken Salami Pizza</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/b1e5e081-d09c-4044-ae7f-f05cafdc1365.jpg">
+                <p id="Pizza-8">Add</p>
+                <br>
+                <i id="icon-hart15" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart16" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-1-3">
+                <h3>Double Chicken Surprise</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/52b93289-98a9-4296-87a4-0a0e0acda8c6.jpg">
+                <p id="Pizza-9">Add</p>
+                <br>
+                <i id="icon-hart17" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart18" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+
+        <div class="row-1"> <!-- row 2.2 classic-->
+
+            <div id="price-col-1-4">
+                <h3>Tandoori Chicken</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/3178e759-1201-4803-a9b8-263998b0d334.jpg">
+                <p id="Pizza-10">Add</p>
+                <br>
+                <i id="icon-hart19" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart20" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-1-5">
+                <h3>Black Chicken</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/c7f0baa3-2a7b-4167-b30d-111f91b13b8a.jpg">
+                <p id="Pizza-11">Add</p>
+                <br>
+                <i id="icon-hart21" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart22" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-1-6">
+                <h3>Hot & Spicy Chicken</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/c4f8dd31-4c4e-41e8-be57-3f0c4e32e13d.jpg">
+                <p id="Pizza-12">Add</p>
+                <br>
+                <i id="icon-hart23" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart24" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+        <hr>
+
+        <h1>Signature</h1>
+        <hr>
+
+        <div class="row-1">   <!-- row 3.1 signature -->
+            <div id="price-col-2-1">
+                <h3>Festive Chicken Magic</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/67e541d9-fdad-4722-be5f-55ff2d63a18a.jpg">
+                <p id="Pizza-13">Add</p>
+                <br>
+                <i id="icon-hart25" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart26" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-2-2">
+                <h3>Minced Mutton Treat</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/7e6b96f3-0bc9-4480-ac9b-d1e61a1d1631.jpg">
+                <p id="Pizza-14">Add</p>
+                <br>
+                <i id="icon-hart27" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart28" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-2-3">
+                <h3>BBQ Chicken</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/104e04f9-4313-4fcf-8942-360bb9b26a0f.jpg">
+                <p id="Pizza-15">Add</p>
+                <br>
+                <i id="icon-hart29" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart30" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+
+        <div class="row-1"> <!-- row 3.2 signature-->
+
+            <div id="price-col-2-4">
+                <h3>Devilled Chicken</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/199f618b-897c-490a-a307-16fe31c13841.jpg">
+                <p id="Pizza-16">Add</p>
+                <br>
+                <i id="icon-hart31" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart32" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-2-5">
+                <h3>Butter Chicken Masala</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/e2083c31-f5e3-43ea-a189-778d58967a6b.jpg">
+                <p id="Pizza-17">Add</p>
+                <br>
+                <i id="icon-hart33" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart34" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-2-6">
+                <h3>Chicken Hawaiian</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/b71c092c-0eef-4c62-b1dc-d0b700f76647.jpg">
+                <p id="Pizza-18">Add</p>
+                <br>
+                <i id="icon-hart35" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart36" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+        <hr>
+
+        <h1>Favourites</h1>
+        <hr>
+
+        <div class="row-1">   <!-- row 4.1 favourites-->
+            <div id="price-col-3-1">
+                <h3>Seafood Treat</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/a450657a-8c26-41a2-a84a-2a7cc75f685e.jpg">
+                <p id="Pizza-19">Add</p>
+                <br>
+                <i id="icon-hart37" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart38" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-3-2">
+                <h3>Sri Lankan Spicy Chicken Pizza</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/7e75b4e7-71de-424f-84ae-93deba8e234c.jpg">
+                <p id="Pizza-20">Add</p>
+                <br>
+                <i id="icon-hart39" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart40" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-3-3">
+                <h3>Veggie Supreme</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/5f46706f-e107-411e-83ee-27a3d0fc9be6.jpg">
+                <p id="Pizza-21">Add</p>
+                <br>
+                <i id="icon-hart41" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart42" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+
+        <div class="row-1"> <!-- row 4.2 favourites-->
+
+            <div id="price-col-3-4">
+                <h3>Beef Pepperoni</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/5bbcc7c8-1869-419c-8397-c85a4e22740e.jpg">
+                <p id="Pizza-22">Add</p><br>
+                <i id="icon-hart43" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart44" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-3-5">
+                <h3>Meat Lovers - Chicken</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/0a596dac-0073-4fc4-9311-5655d15888c9.jpg">
+                <p id="Pizza-23">Add</p><br>
+                <i id="icon-hart45" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart46" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-3-6">
+                <h3>Meat Lovers - Beef</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/ffea71c5-7c88-415a-87c6-995684a9f501.jpg">
+                <p id="Pizza-24">Add</p><br>
+                <i id="icon-hart47" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart48" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+        <hr>
+
+        <h1>Supreme</h1>
+        <hr>
+
+        <div class="row-1">   <!-- row 5.1 supreme-->
+            <div id="price-col-4-1">
+                <h3>The Ultimate Chicken Treat</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/ea7c34b6-4090-4fb3-8b4c-5df36d247c4e.jpg">
+                <p id="Pizza-25">Add</p><br>
+                <i id="icon-hart49" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart50" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-4-2">
+                <h3>Super Supreme</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/b3c4d3d4-5d2c-4783-866c-07db97fc528d.jpg">
+                <p id="Pizza-26">Add</p><br>
+                <i id="icon-hart51" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart52" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+            <div id="price-col-4-3">
+                <h3>Hot Garlic Prawns</h3>
+                <img src="https://adminsc.pizzahut.lk//images/mainmenu/0f1591db-57a8-42ae-ac92-37d27e567c30.jpg">
+                <p id="Pizza-27">Add</p><br>
+                <i id="icon-hart53" style="cursor: pointer;" class="fa fa-heart-o"></i>
+                <i id="icon-hart54" style="cursor: pointer;" class="fa fa-heart"></i><br>
+            </div>
+
+        </div>
+        <script src="pizza.js"> </script>
+
+     </section>
+    </body>
+
+     <!-- JavaScript for toggle menu -->
+    <script>
+        var navlinks = document.getElementById("nav-links");
+        
+
+function showmenu(){
+    navlinks.style.right = "0";
+    
+}
+
+function hidemenu(){
+    navlinks.style.right = "-200px";
+}
+      
+    </script>
+
+    
+    
+</body>
+</html>
